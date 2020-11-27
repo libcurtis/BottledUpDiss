@@ -7,15 +7,30 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
+    @State private var selection = 2
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView(selection:$selection) {
+            AccountView().tabItem {
+                    Image(systemName: "person.fill")
+                Text("Account") }.tag(1)
+            
+            HomeView().tabItem {
+                Image(systemName: "house")
+                Text("Home") }.tag(2)
+            
+            HelpView().tabItem {
+                Image(systemName: "questionmark.circle.fill")
+                Text("Help") }.tag(3)
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
+            .environment(\.colorScheme, .light)
+            .environmentObject(BottledStressors())
     }
 }

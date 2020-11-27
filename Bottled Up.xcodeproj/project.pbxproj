@@ -10,11 +10,23 @@
 		724AC071253B76DC007880FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC070253B76DC007880FF /* AppDelegate.swift */; };
 		724AC073253B76DC007880FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC072253B76DC007880FF /* SceneDelegate.swift */; };
 		724AC075253B76DC007880FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC074253B76DC007880FF /* ContentView.swift */; };
-		724AC077253B76DE007880FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724AC076253B76DE007880FF /* Assets.xcassets */; };
 		724AC07A253B76DE007880FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724AC079253B76DE007880FF /* Preview Assets.xcassets */; };
 		724AC07D253B76DE007880FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724AC07B253B76DE007880FF /* LaunchScreen.storyboard */; };
 		724AC088253B76DE007880FF /* Bottled_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC087253B76DE007880FF /* Bottled_UpTests.swift */; };
 		724AC093253B76DE007880FF /* Bottled_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC092253B76DE007880FF /* Bottled_UpUITests.swift */; };
+		7252AB3F2541BBC400499D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724AC076253B76DE007880FF /* Assets.xcassets */; };
+		7252AB4E2541C0C000499D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724AC076253B76DE007880FF /* Assets.xcassets */; };
+		72926AD8254A310C00CA972A /* AddingStressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72926AD7254A310C00CA972A /* AddingStressor.swift */; };
+		72A45D172570080E00FD1D0D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A45D162570080E00FD1D0D /* HomeView.swift */; };
+		72A45D2525701B3900FD1D0D /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A45D2425701B3900FD1D0D /* HelpView.swift */; };
+		72A45D2A25701F8B00FD1D0D /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A45D2925701F8B00FD1D0D /* AccountView.swift */; };
+		72B9D3CE253B814900B8ECE1 /* BottleImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3CD253B814900B8ECE1 /* BottleImg.swift */; };
+		72B9D3DF253B87E700B8ECE1 /* StressorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3DE253B87E700B8ECE1 /* StressorItem.swift */; };
+		72B9D3F0253B898800B8ECE1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3EF253B898800B8ECE1 /* Data.swift */; };
+		72B9D3FA253B955100B8ECE1 /* Stressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3F9253B955100B8ECE1 /* Stressor.swift */; };
+		72B9D407253BA10500B8ECE1 /* stressorData.json in Resources */ = {isa = PBXBuildFile; fileRef = 72B9D3DA253B879200B8ECE1 /* stressorData.json */; };
+		72B9D40C253BAD6100B8ECE1 /* BottledStressors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D40B253BAD6100B8ECE1 /* BottledStressors.swift */; };
+		72D91C1A2569458A008CACAF /* DetailStressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D91C192569458A008CACAF /* DetailStressor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +61,17 @@
 		724AC08E253B76DE007880FF /* Bottled UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bottled UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		724AC092253B76DE007880FF /* Bottled_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bottled_UpUITests.swift; sourceTree = "<group>"; };
 		724AC094253B76DE007880FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72926AD7254A310C00CA972A /* AddingStressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingStressor.swift; sourceTree = "<group>"; };
+		72A45D162570080E00FD1D0D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		72A45D2425701B3900FD1D0D /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		72A45D2925701F8B00FD1D0D /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		72B9D3CD253B814900B8ECE1 /* BottleImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleImg.swift; sourceTree = "<group>"; };
+		72B9D3DA253B879200B8ECE1 /* stressorData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stressorData.json; sourceTree = "<group>"; };
+		72B9D3DE253B87E700B8ECE1 /* StressorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressorItem.swift; sourceTree = "<group>"; };
+		72B9D3EF253B898800B8ECE1 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = ../../../../../../../Downloads/BuildingListsAndNavigation/StartingPoint/Landmarks/Landmarks/Models/Data.swift; sourceTree = "<group>"; };
+		72B9D3F9253B955100B8ECE1 /* Stressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stressor.swift; sourceTree = "<group>"; };
+		72B9D40B253BAD6100B8ECE1 /* BottledStressors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottledStressors.swift; sourceTree = "<group>"; };
+		72D91C192569458A008CACAF /* DetailStressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStressor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +122,20 @@
 		724AC06F253B76DC007880FF /* Bottled Up */ = {
 			isa = PBXGroup;
 			children = (
+				72B9D3E3253B883900B8ECE1 /* Models */,
+				72B9D3D4253B876E00B8ECE1 /* Resources */,
 				724AC070253B76DC007880FF /* AppDelegate.swift */,
 				724AC072253B76DC007880FF /* SceneDelegate.swift */,
+				72B9D3DE253B87E700B8ECE1 /* StressorItem.swift */,
+				72B9D40B253BAD6100B8ECE1 /* BottledStressors.swift */,
 				724AC074253B76DC007880FF /* ContentView.swift */,
+				72A45D2425701B3900FD1D0D /* HelpView.swift */,
+				72A45D2925701F8B00FD1D0D /* AccountView.swift */,
+				72A45D162570080E00FD1D0D /* HomeView.swift */,
+				72926AD7254A310C00CA972A /* AddingStressor.swift */,
+				72D91C192569458A008CACAF /* DetailStressor.swift */,
 				724AC076253B76DE007880FF /* Assets.xcassets */,
+				72B9D3CD253B814900B8ECE1 /* BottleImg.swift */,
 				724AC07B253B76DE007880FF /* LaunchScreen.storyboard */,
 				724AC07E253B76DE007880FF /* Info.plist */,
 				724AC078253B76DE007880FF /* Preview Content */,
@@ -134,6 +167,23 @@
 				724AC094253B76DE007880FF /* Info.plist */,
 			);
 			path = "Bottled UpUITests";
+			sourceTree = "<group>";
+		};
+		72B9D3D4253B876E00B8ECE1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72B9D3DA253B879200B8ECE1 /* stressorData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		72B9D3E3253B883900B8ECE1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72B9D3F9253B955100B8ECE1 /* Stressor.swift */,
+				72B9D3EF253B898800B8ECE1 /* Data.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,9 +289,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B9D407253BA10500B8ECE1 /* stressorData.json in Resources */,
 				724AC07D253B76DE007880FF /* LaunchScreen.storyboard in Resources */,
+				7252AB3F2541BBC400499D82 /* Assets.xcassets in Resources */,
 				724AC07A253B76DE007880FF /* Preview Assets.xcassets in Resources */,
-				724AC077253B76DE007880FF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7252AB4E2541C0C000499D82 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +318,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B9D3F0253B898800B8ECE1 /* Data.swift in Sources */,
+				72A45D2525701B3900FD1D0D /* HelpView.swift in Sources */,
+				72B9D3DF253B87E700B8ECE1 /* StressorItem.swift in Sources */,
 				724AC071253B76DC007880FF /* AppDelegate.swift in Sources */,
+				72B9D3CE253B814900B8ECE1 /* BottleImg.swift in Sources */,
 				724AC073253B76DC007880FF /* SceneDelegate.swift in Sources */,
 				724AC075253B76DC007880FF /* ContentView.swift in Sources */,
+				72B9D3FA253B955100B8ECE1 /* Stressor.swift in Sources */,
+				72D91C1A2569458A008CACAF /* DetailStressor.swift in Sources */,
+				72A45D172570080E00FD1D0D /* HomeView.swift in Sources */,
+				72926AD8254A310C00CA972A /* AddingStressor.swift in Sources */,
+				72A45D2A25701F8B00FD1D0D /* AccountView.swift in Sources */,
+				72B9D40C253BAD6100B8ECE1 /* BottledStressors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
