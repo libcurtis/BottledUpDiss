@@ -23,7 +23,7 @@ extension View {
 }
 
 struct ColorBlock: View {
-    var id = UUID()
+    var colorID = UUID()
     var color: Color
     var body: some View {
         RoundedRectangle(cornerRadius: 20)
@@ -33,8 +33,6 @@ struct ColorBlock: View {
 }
 
 struct Colors: View {
-    @EnvironmentObject var stressorList: BottledStressors
-    
     var body: some View {
         HStack{
             ColorBlock(color: .orange)
@@ -53,10 +51,10 @@ struct Colors: View {
 
 struct AddingStressor: View {
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var stressorList: BottledStressors
+    @Environment(\.managedObjectContext) var moc
     @ObservedObject var textFieldManager = TextFieldManager()
     @State private var comments: String = ""
-    @State private var size: Int = 2
+    @State private var size: Int16 = 2
     @State private var sColour: Color = Color.blue
     
     var body: some View {
@@ -150,15 +148,16 @@ struct AddingStressor: View {
                 
                 Button("Add") {
                     let colourAsString = CIColor(color: UIColor(sColour)).stringRepresentation
-                    let newStressor = Stressor(
-                        name: self.textFieldManager.userInput,
-                        colour: colourAsString,
-                        comments: comments,
-                        size: size)
                     
-                    stressorList.stressors.insert(newStressor, at: 0)
-                    save(this: stressorList.stressors, "stressorData.json")
-                    print("", stressorList.stressors)
+                    let stressor = Stressor(context: self.moc)
+                    stressor.stressorID = UUID()
+                    stressor.name = self.textFieldManager.userInput
+                    stressor.colour = colourAsString
+                    stressor.comments = comments
+                    stressor.size = size
+                    
+                    try? self.moc.save()
+                    
                     self.presentationMode.wrappedValue.dismiss()
                 }.padding()
             }.offset(x:0, y:-100)
@@ -166,7 +165,7 @@ struct AddingStressor: View {
     }
     
     func setSize(size: Int) {
-        self.size = size
+        self.size = Int16(size)
     }
 }
 
@@ -184,6 +183,6 @@ class TextFieldManager: ObservableObject {
 
 struct AddingStressor_Previews: PreviewProvider {
     static var previews: some View {
-        AddingStressor().environmentObject(BottledStressors())
+        AddingStressor()
     }
 }

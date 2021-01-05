@@ -18,7 +18,7 @@ struct AppTitle: View {
 }
 
 struct DropletButton: View {
-    @EnvironmentObject var stressorList: BottledStressors
+    @EnvironmentObject var envObj: EnvObject
     
     var body: some View {
         Image(systemName: "drop.fill")
@@ -36,7 +36,7 @@ struct DropletButton: View {
     }
     
     func addStressor() {
-        self.stressorList.addingStressor.toggle()
+        self.envObj.addingStressor.toggle()
     }
 }
 
@@ -53,29 +53,35 @@ struct HeaderView: View {
 }
 
 struct BottleView: View {
-    @EnvironmentObject var stressorList: BottledStressors
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(entity: Stressor.entity(), sortDescriptors: [])  var stressors: FetchedResults<Stressor>
+    @EnvironmentObject var envObj: EnvObject
     
     var body: some View {
+        
         ZStack(alignment: .bottom) {
             VStack {
-                ForEach(stressorList.stressors) {stressor in
+                ForEach(stressors) {stressor in
                     NavigationLink(destination: DetailStressor(stressor: stressor)) {
-                            StressorItem(stressor: stressor)
+                        StressorItem(stressor: stressor)
                     }
                 }
             }
-                .padding()
-                .frame(maxWidth: 300, maxHeight: 400)
+            .padding()
+            .frame(maxWidth: 300, maxHeight: 400)
+            
             BottleImg()
                 .scaleEffect(1.2)
                 .allowsHitTesting(false)
         }
         .offset(x:0, y: -30)
+        
     }
 }
 
 struct HomeView: View {
-    @EnvironmentObject var stressorList: BottledStressors
+    @EnvironmentObject var envObj: EnvObject
+    @Environment(\.managedObjectContext) var moc
     
     var body: some View {
         NavigationView {
@@ -83,16 +89,10 @@ struct HomeView: View {
                 HeaderView()
                 BottleView()
             }
-            .sheet(isPresented: $stressorList.addingStressor) {
-                AddingStressor()
+            .sheet(isPresented: $envObj.addingStressor) {
+                AddingStressor().environment(\.managedObjectContext, self.moc)
             }
             .background(Color(.white))
         }
-    }
-}
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView().environmentObject(BottledStressors())
     }
 }

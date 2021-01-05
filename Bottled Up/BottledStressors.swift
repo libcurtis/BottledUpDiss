@@ -7,22 +7,10 @@
 
 import SwiftUI
 
-class BottledStressors: ObservableObject {
-    @Published var stressors: [Stressor] {
-        didSet {
-            save(this: stressors, "stressorData.json")
-        }
-    }
+class EnvObject: ObservableObject {
     @Published var addingStressor: Bool
     
     init() {
         self.addingStressor = false
-        
-        if let data: [Stressor] = load("stressorData.json") {
-            self.stressors = data
-            return
-        }
-
-        self.stressors = []
     }
 }

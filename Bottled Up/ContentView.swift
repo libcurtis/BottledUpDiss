@@ -15,7 +15,7 @@ struct MainView: View {
             AccountView().tabItem {
                     Image(systemName: "person.fill")
                 Text("Account") }.tag(1)
-            
+           
             HomeView().tabItem {
                 Image(systemName: "house")
                 Text("Home") }.tag(2)
@@ -31,6 +31,5 @@ struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
             .environment(\.colorScheme, .light)
-            .environmentObject(BottledStressors())
     }
 }

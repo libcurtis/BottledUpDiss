@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7241F3F02580153400BBD21E /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7241F3EE2580153400BBD21E /* DataModel.xcdatamodeld */; };
 		724AC071253B76DC007880FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC070253B76DC007880FF /* AppDelegate.swift */; };
 		724AC073253B76DC007880FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC072253B76DC007880FF /* SceneDelegate.swift */; };
 		724AC075253B76DC007880FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC074253B76DC007880FF /* ContentView.swift */; };
@@ -15,11 +16,17 @@
 		724AC088253B76DE007880FF /* Bottled_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC087253B76DE007880FF /* Bottled_UpTests.swift */; };
 		724AC093253B76DE007880FF /* Bottled_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC092253B76DE007880FF /* Bottled_UpUITests.swift */; };
 		7252AB3F2541BBC400499D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724AC076253B76DE007880FF /* Assets.xcassets */; };
-		7252AB4E2541C0C000499D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724AC076253B76DE007880FF /* Assets.xcassets */; };
+		7270ABB7258BC9B600262E0F /* Stressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3F9253B955100B8ECE1 /* Stressor.swift */; };
+		7270ABBC258BC9C300262E0F /* Stressor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A851FF258BB0F9005F01D2 /* Stressor+CoreDataProperties.swift */; };
+		7270ABC1258BC9CC00262E0F /* Stressor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A851FE258BB0F9005F01D2 /* Stressor+CoreDataClass.swift */; };
+		7270ABE0258BCAAD00262E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72DB2347258BC2EA00752C04 /* Assets.xcassets */; };
+		7270ABE5258BCAFC00262E0F /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7241F3EE2580153400BBD21E /* DataModel.xcdatamodeld */; };
 		72926AD8254A310C00CA972A /* AddingStressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72926AD7254A310C00CA972A /* AddingStressor.swift */; };
 		72A45D172570080E00FD1D0D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A45D162570080E00FD1D0D /* HomeView.swift */; };
 		72A45D2525701B3900FD1D0D /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A45D2425701B3900FD1D0D /* HelpView.swift */; };
 		72A45D2A25701F8B00FD1D0D /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A45D2925701F8B00FD1D0D /* AccountView.swift */; };
+		72A85200258BB0F9005F01D2 /* Stressor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A851FE258BB0F9005F01D2 /* Stressor+CoreDataClass.swift */; };
+		72A85201258BB0F9005F01D2 /* Stressor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A851FF258BB0F9005F01D2 /* Stressor+CoreDataProperties.swift */; };
 		72B9D3CE253B814900B8ECE1 /* BottleImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3CD253B814900B8ECE1 /* BottleImg.swift */; };
 		72B9D3DF253B87E700B8ECE1 /* StressorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3DE253B87E700B8ECE1 /* StressorItem.swift */; };
 		72B9D3F0253B898800B8ECE1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3EF253B898800B8ECE1 /* Data.swift */; };
@@ -27,6 +34,25 @@
 		72B9D407253BA10500B8ECE1 /* stressorData.json in Resources */ = {isa = PBXBuildFile; fileRef = 72B9D3DA253B879200B8ECE1 /* stressorData.json */; };
 		72B9D40C253BAD6100B8ECE1 /* BottledStressors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D40B253BAD6100B8ECE1 /* BottledStressors.swift */; };
 		72D91C1A2569458A008CACAF /* DetailStressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D91C192569458A008CACAF /* DetailStressor.swift */; };
+		72DB2335258BBA0200752C04 /* ReframeStressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB2334258BBA0200752C04 /* ReframeStressor.swift */; };
+		72DB2340258BC2E900752C04 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DB233F258BC2E900752C04 /* WidgetKit.framework */; };
+		72DB2342258BC2E900752C04 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DB2341258BC2E900752C04 /* SwiftUI.framework */; };
+		72DB2345258BC2E900752C04 /* BottledUpWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB2344258BC2E900752C04 /* BottledUpWidget.swift */; };
+		72DB234A258BC2EA00752C04 /* BottledUpWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 72DB2346258BC2E900752C04 /* BottledUpWidget.intentdefinition */; };
+		72DB234B258BC2EA00752C04 /* BottledUpWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 72DB2346258BC2E900752C04 /* BottledUpWidget.intentdefinition */; };
+		72DB234E258BC2EA00752C04 /* BottledUpWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 72DB233D258BC2E900752C04 /* BottledUpWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		72DB2367258BC5CD00752C04 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB2366258BC5CD00752C04 /* WidgetView.swift */; };
+		72DB236C258BC5CF00752C04 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB2366258BC5CD00752C04 /* WidgetView.swift */; };
+		72DB237A258BC6DA00752C04 /* BottledStressors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D40B253BAD6100B8ECE1 /* BottledStressors.swift */; };
+		72DB237F258BC6DF00752C04 /* StressorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3DE253B87E700B8ECE1 /* StressorItem.swift */; };
+		72DB2384258BC6E400752C04 /* BottleImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3CD253B814900B8ECE1 /* BottleImg.swift */; };
+		72DB238F258BC6FF00752C04 /* DetailStressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D91C192569458A008CACAF /* DetailStressor.swift */; };
+		72DB2399258BC71400752C04 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A45D2425701B3900FD1D0D /* HelpView.swift */; };
+		72DB239E258BC71900752C04 /* AddingStressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72926AD7254A310C00CA972A /* AddingStressor.swift */; };
+		72DB23A3258BC71D00752C04 /* ReframeStressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB2334258BBA0200752C04 /* ReframeStressor.swift */; };
+		72DB23A4258BC71F00752C04 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A45D2925701F8B00FD1D0D /* AccountView.swift */; };
+		72DB23A9258BC72300752C04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC074253B76DC007880FF /* ContentView.swift */; };
+		72DB23CE258BC7E100752C04 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A45D162570080E00FD1D0D /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +70,31 @@
 			remoteGlobalIDString = 724AC06C253B76DC007880FF;
 			remoteInfo = "Bottled Up";
 		};
+		72DB234C258BC2EA00752C04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 724AC065253B76DC007880FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72DB233C258BC2E900752C04;
+			remoteInfo = BottledUpWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		72DB2352258BC2EA00752C04 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				72DB234E258BC2EA00752C04 /* BottledUpWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7241F3EF2580153400BBD21E /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		724AC06D253B76DC007880FF /* Bottled Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bottled Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		724AC070253B76DC007880FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		724AC072253B76DC007880FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,10 +109,14 @@
 		724AC08E253B76DE007880FF /* Bottled UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bottled UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		724AC092253B76DE007880FF /* Bottled_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bottled_UpUITests.swift; sourceTree = "<group>"; };
 		724AC094253B76DE007880FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7270ABEA258BCEDF00262E0F /* Bottled Up.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bottled Up.entitlements"; sourceTree = "<group>"; };
+		7270ABEF258BCF5600262E0F /* BottledUpWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BottledUpWidgetExtension.entitlements; sourceTree = "<group>"; };
 		72926AD7254A310C00CA972A /* AddingStressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingStressor.swift; sourceTree = "<group>"; };
 		72A45D162570080E00FD1D0D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		72A45D2425701B3900FD1D0D /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		72A45D2925701F8B00FD1D0D /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		72A851FE258BB0F9005F01D2 /* Stressor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stressor+CoreDataClass.swift"; sourceTree = "<group>"; };
+		72A851FF258BB0F9005F01D2 /* Stressor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stressor+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		72B9D3CD253B814900B8ECE1 /* BottleImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleImg.swift; sourceTree = "<group>"; };
 		72B9D3DA253B879200B8ECE1 /* stressorData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stressorData.json; sourceTree = "<group>"; };
 		72B9D3DE253B87E700B8ECE1 /* StressorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressorItem.swift; sourceTree = "<group>"; };
@@ -72,6 +124,15 @@
 		72B9D3F9253B955100B8ECE1 /* Stressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stressor.swift; sourceTree = "<group>"; };
 		72B9D40B253BAD6100B8ECE1 /* BottledStressors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottledStressors.swift; sourceTree = "<group>"; };
 		72D91C192569458A008CACAF /* DetailStressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStressor.swift; sourceTree = "<group>"; };
+		72DB2334258BBA0200752C04 /* ReframeStressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReframeStressor.swift; sourceTree = "<group>"; };
+		72DB233D258BC2E900752C04 /* BottledUpWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BottledUpWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		72DB233F258BC2E900752C04 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		72DB2341258BC2E900752C04 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		72DB2344258BC2E900752C04 /* BottledUpWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottledUpWidget.swift; sourceTree = "<group>"; };
+		72DB2346258BC2E900752C04 /* BottledUpWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = BottledUpWidget.intentdefinition; sourceTree = "<group>"; };
+		72DB2347258BC2EA00752C04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72DB2349258BC2EA00752C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72DB2366258BC5CD00752C04 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,15 +157,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72DB233A258BC2E900752C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DB2342258BC2E900752C04 /* SwiftUI.framework in Frameworks */,
+				72DB2340258BC2E900752C04 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		724AC064253B76DC007880FF = {
 			isa = PBXGroup;
 			children = (
+				7270ABEF258BCF5600262E0F /* BottledUpWidgetExtension.entitlements */,
 				724AC06F253B76DC007880FF /* Bottled Up */,
 				724AC086253B76DE007880FF /* Bottled UpTests */,
 				724AC091253B76DE007880FF /* Bottled UpUITests */,
+				72DB2343258BC2E900752C04 /* BottledUpWidget */,
+				72DB233E258BC2E900752C04 /* Frameworks */,
 				724AC06E253B76DC007880FF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,6 +188,7 @@
 				724AC06D253B76DC007880FF /* Bottled Up.app */,
 				724AC083253B76DE007880FF /* Bottled UpTests.xctest */,
 				724AC08E253B76DE007880FF /* Bottled UpUITests.xctest */,
+				72DB233D258BC2E900752C04 /* BottledUpWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,20 +196,25 @@
 		724AC06F253B76DC007880FF /* Bottled Up */ = {
 			isa = PBXGroup;
 			children = (
+				7270ABEA258BCEDF00262E0F /* Bottled Up.entitlements */,
+				72A851FE258BB0F9005F01D2 /* Stressor+CoreDataClass.swift */,
+				72A851FF258BB0F9005F01D2 /* Stressor+CoreDataProperties.swift */,
 				72B9D3E3253B883900B8ECE1 /* Models */,
 				72B9D3D4253B876E00B8ECE1 /* Resources */,
 				724AC070253B76DC007880FF /* AppDelegate.swift */,
 				724AC072253B76DC007880FF /* SceneDelegate.swift */,
-				72B9D3DE253B87E700B8ECE1 /* StressorItem.swift */,
-				72B9D40B253BAD6100B8ECE1 /* BottledStressors.swift */,
-				724AC074253B76DC007880FF /* ContentView.swift */,
 				72A45D2425701B3900FD1D0D /* HelpView.swift */,
-				72A45D2925701F8B00FD1D0D /* AccountView.swift */,
-				72A45D162570080E00FD1D0D /* HomeView.swift */,
+				72DB2366258BC5CD00752C04 /* WidgetView.swift */,
+				72B9D3CD253B814900B8ECE1 /* BottleImg.swift */,
 				72926AD7254A310C00CA972A /* AddingStressor.swift */,
 				72D91C192569458A008CACAF /* DetailStressor.swift */,
+				72DB2334258BBA0200752C04 /* ReframeStressor.swift */,
+				72A45D2925701F8B00FD1D0D /* AccountView.swift */,
+				72A45D162570080E00FD1D0D /* HomeView.swift */,
+				724AC074253B76DC007880FF /* ContentView.swift */,
+				72B9D40B253BAD6100B8ECE1 /* BottledStressors.swift */,
+				72B9D3DE253B87E700B8ECE1 /* StressorItem.swift */,
 				724AC076253B76DE007880FF /* Assets.xcassets */,
-				72B9D3CD253B814900B8ECE1 /* BottleImg.swift */,
 				724AC07B253B76DE007880FF /* LaunchScreen.storyboard */,
 				724AC07E253B76DE007880FF /* Info.plist */,
 				724AC078253B76DE007880FF /* Preview Content */,
@@ -180,10 +259,31 @@
 		72B9D3E3253B883900B8ECE1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7241F3EE2580153400BBD21E /* DataModel.xcdatamodeld */,
 				72B9D3F9253B955100B8ECE1 /* Stressor.swift */,
 				72B9D3EF253B898800B8ECE1 /* Data.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		72DB233E258BC2E900752C04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72DB233F258BC2E900752C04 /* WidgetKit.framework */,
+				72DB2341258BC2E900752C04 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72DB2343258BC2E900752C04 /* BottledUpWidget */ = {
+			isa = PBXGroup;
+			children = (
+				72DB2344258BC2E900752C04 /* BottledUpWidget.swift */,
+				72DB2346258BC2E900752C04 /* BottledUpWidget.intentdefinition */,
+				72DB2347258BC2EA00752C04 /* Assets.xcassets */,
+				72DB2349258BC2EA00752C04 /* Info.plist */,
+			);
+			path = BottledUpWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,10 +296,12 @@
 				724AC069253B76DC007880FF /* Sources */,
 				724AC06A253B76DC007880FF /* Frameworks */,
 				724AC06B253B76DC007880FF /* Resources */,
+				72DB2352258BC2EA00752C04 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				72DB234D258BC2EA00752C04 /* PBXTargetDependency */,
 			);
 			name = "Bottled Up";
 			productName = "Bottled Up";
@@ -242,6 +344,23 @@
 			productReference = 724AC08E253B76DE007880FF /* Bottled UpUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		72DB233C258BC2E900752C04 /* BottledUpWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72DB234F258BC2EA00752C04 /* Build configuration list for PBXNativeTarget "BottledUpWidgetExtension" */;
+			buildPhases = (
+				72DB2339258BC2E900752C04 /* Sources */,
+				72DB233A258BC2E900752C04 /* Frameworks */,
+				72DB233B258BC2E900752C04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BottledUpWidgetExtension;
+			productName = BottledUpWidgetExtension;
+			productReference = 72DB233D258BC2E900752C04 /* BottledUpWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -262,6 +381,9 @@
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 724AC06C253B76DC007880FF;
 					};
+					72DB233C258BC2E900752C04 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 				};
 			};
 			buildConfigurationList = 724AC068253B76DC007880FF /* Build configuration list for PBXProject "Bottled Up" */;
@@ -280,6 +402,7 @@
 				724AC06C253B76DC007880FF /* Bottled Up */,
 				724AC082253B76DE007880FF /* Bottled UpTests */,
 				724AC08D253B76DE007880FF /* Bottled UpUITests */,
+				72DB233C258BC2E900752C04 /* BottledUpWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -300,7 +423,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7252AB4E2541C0C000499D82 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +430,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72DB233B258BC2E900752C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7270ABE0258BCAAD00262E0F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,8 +450,13 @@
 			files = (
 				72B9D3F0253B898800B8ECE1 /* Data.swift in Sources */,
 				72A45D2525701B3900FD1D0D /* HelpView.swift in Sources */,
+				72DB234B258BC2EA00752C04 /* BottledUpWidget.intentdefinition in Sources */,
+				72DB2335258BBA0200752C04 /* ReframeStressor.swift in Sources */,
 				72B9D3DF253B87E700B8ECE1 /* StressorItem.swift in Sources */,
+				7241F3F02580153400BBD21E /* DataModel.xcdatamodeld in Sources */,
+				72A85201258BB0F9005F01D2 /* Stressor+CoreDataProperties.swift in Sources */,
 				724AC071253B76DC007880FF /* AppDelegate.swift in Sources */,
+				72A85200258BB0F9005F01D2 /* Stressor+CoreDataClass.swift in Sources */,
 				72B9D3CE253B814900B8ECE1 /* BottleImg.swift in Sources */,
 				724AC073253B76DC007880FF /* SceneDelegate.swift in Sources */,
 				724AC075253B76DC007880FF /* ContentView.swift in Sources */,
@@ -331,6 +466,7 @@
 				72926AD8254A310C00CA972A /* AddingStressor.swift in Sources */,
 				72A45D2A25701F8B00FD1D0D /* AccountView.swift in Sources */,
 				72B9D40C253BAD6100B8ECE1 /* BottledStressors.swift in Sources */,
+				72DB2367258BC5CD00752C04 /* WidgetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +486,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72DB2339258BC2E900752C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7270ABC1258BC9CC00262E0F /* Stressor+CoreDataClass.swift in Sources */,
+				72DB2399258BC71400752C04 /* HelpView.swift in Sources */,
+				72DB23A9258BC72300752C04 /* ContentView.swift in Sources */,
+				72DB236C258BC5CF00752C04 /* WidgetView.swift in Sources */,
+				7270ABE5258BCAFC00262E0F /* DataModel.xcdatamodeld in Sources */,
+				72DB2384258BC6E400752C04 /* BottleImg.swift in Sources */,
+				72DB237F258BC6DF00752C04 /* StressorItem.swift in Sources */,
+				72DB237A258BC6DA00752C04 /* BottledStressors.swift in Sources */,
+				7270ABBC258BC9C300262E0F /* Stressor+CoreDataProperties.swift in Sources */,
+				72DB23CE258BC7E100752C04 /* HomeView.swift in Sources */,
+				72DB23A4258BC71F00752C04 /* AccountView.swift in Sources */,
+				72DB23A3258BC71D00752C04 /* ReframeStressor.swift in Sources */,
+				72DB238F258BC6FF00752C04 /* DetailStressor.swift in Sources */,
+				72DB239E258BC71900752C04 /* AddingStressor.swift in Sources */,
+				72DB234A258BC2EA00752C04 /* BottledUpWidget.intentdefinition in Sources */,
+				7270ABB7258BC9B600262E0F /* Stressor.swift in Sources */,
+				72DB2345258BC2E900752C04 /* BottledUpWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -362,6 +522,11 @@
 			isa = PBXTargetDependency;
 			target = 724AC06C253B76DC007880FF /* Bottled Up */;
 			targetProxy = 724AC08F253B76DE007880FF /* PBXContainerItemProxy */;
+		};
+		72DB234D258BC2EA00752C04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72DB233C258BC2E900752C04 /* BottledUpWidgetExtension */;
+			targetProxy = 72DB234C258BC2EA00752C04 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -496,11 +661,15 @@
 		724AC098253B76DE007880FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Bottled Up/Bottled Up.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Bottled Up/Preview Content\"";
+				DEVELOPMENT_TEAM = B479V4T8BS;
 				ENABLE_PREVIEWS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = "Bottled Up/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -516,11 +685,15 @@
 		724AC099253B76DE007880FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Bottled Up/Bottled Up.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Bottled Up/Preview Content\"";
+				DEVELOPMENT_TEAM = B479V4T8BS;
 				ENABLE_PREVIEWS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = "Bottled Up/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -613,6 +786,50 @@
 			};
 			name = Release;
 		};
+		72DB2350258BC2EA00752C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BottledUpWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B479V4T8BS;
+				INFOPLIST_FILE = BottledUpWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Bottled-Up.BottledUpWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72DB2351258BC2EA00752C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BottledUpWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B479V4T8BS;
+				INFOPLIST_FILE = BottledUpWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Bottled-Up.BottledUpWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -652,7 +869,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		72DB234F258BC2EA00752C04 /* Build configuration list for PBXNativeTarget "BottledUpWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72DB2350258BC2EA00752C04 /* Debug */,
+				72DB2351258BC2EA00752C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7241F3EE2580153400BBD21E /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7241F3EF2580153400BBD21E /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 7241F3EF2580153400BBD21E /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 724AC065253B76DC007880FF /* Project object */;
 }

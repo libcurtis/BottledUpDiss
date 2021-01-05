@@ -14,9 +14,9 @@
             filePath = "../../../../../Downloads/BuildingListsAndNavigation/StartingPoint/Landmarks/Landmarks/Models/Data.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "load(_:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "writeWidgetData()"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -30,9 +30,9 @@
             filePath = "../../../../../Downloads/BuildingListsAndNavigation/StartingPoint/Landmarks/Landmarks/Models/Data.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "load(_:)"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "writeWidgetData()"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -48,15 +48,15 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
             endingLineNumber = "11"
-            landmarkName = "Stressor"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A2E985F3-BDA3-4C51-8ED9-AB7812DFE859"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Bottled Up/StressorItem.swift"
@@ -66,70 +66,162 @@
             endingLineNumber = "11"
             landmarkName = "StressorItem"
             landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "A2E985F3-BDA3-4C51-8ED9-AB7812DFE859 - 79a34c16b4242c4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of Bottled_Up.StressorItem.stressor : Bottled_Up.Stressor"
+                  moduleName = "Bottled Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/DISS/App/Bottled%20Up/Bottled%20Up/StressorItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "A2E985F3-BDA3-4C51-8ED9-AB7812DFE859 - 384de3db4c05cd63"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bottled_Up.StressorItem.stressor.getter : Bottled_Up.Stressor"
+                  moduleName = "Bottled Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/DISS/App/Bottled%20Up/Bottled%20Up/StressorItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "A2E985F3-BDA3-4C51-8ED9-AB7812DFE859 - 8bee036cf87e8117"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bottled_Up.StressorItem.stressor.setter : Bottled_Up.Stressor"
+                  moduleName = "Bottled Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/DISS/App/Bottled%20Up/Bottled%20Up/StressorItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "A2E985F3-BDA3-4C51-8ED9-AB7812DFE859 - 9b713cb246a4f0f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bottled_Up.StressorItem.stressor.modify : Bottled_Up.Stressor"
+                  moduleName = "Bottled Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/DISS/App/Bottled%20Up/Bottled%20Up/StressorItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "A2E985F3-BDA3-4C51-8ED9-AB7812DFE859 - b9ccf32fe2e54e17"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bottled_Up.StressorItem.stressor.modify : Bottled_Up.Stressor with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Bottled Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/DISS/App/Bottled%20Up/Bottled%20Up/StressorItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "A2E985F3-BDA3-4C51-8ED9-AB7812DFE859 - 3c98c8199a23102b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bottled_Up.StressorItem.$stressor.getter : SwiftUI.ObservedObject&lt;Bottled_Up.Stressor&gt;.Wrapper"
+                  moduleName = "Bottled Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/DISS/App/Bottled%20Up/Bottled%20Up/StressorItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "AA590AF0-040D-43A6-9786-00265B0F86EF"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Bottled Up/StressorItem.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "previews"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "AA590AF0-040D-43A6-9786-00265B0F86EF - 197c744857500041"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Bottled_Up.Stressor_Previews.previews.getter : some"
+                  moduleName = "Bottled Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/DISS/App/Bottled%20Up/Bottled%20Up/StressorItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "464">
+               </Location>
+               <Location
+                  uuid = "AA590AF0-040D-43A6-9786-00265B0F86EF - df2b869d44791500"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.EmptyView in static Bottled_Up.Stressor_Previews.previews.getter : some"
+                  moduleName = "Bottled Up"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/DISS/App/Bottled%20Up/Bottled%20Up/StressorItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "6E4F34EE-9BD6-4093-8C68-EE35A99B7F43"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Bottled Up/StressorItem.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "previews"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "6E4F34EE-9BD6-4093-8C68-EE35A99B7F43 - 8d6961cb960957a9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static Bottled_Up.Stressor_Previews.previews.getter : some"
-                  moduleName = "Bottled Up"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/Diss/App/Bottled%20Up/Bottled%20Up/StressorItem.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "205">
-               </Location>
-               <Location
-                  uuid = "6E4F34EE-9BD6-4093-8C68-EE35A99B7F43 - 8d6961cb96095788"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static Bottled_Up.Stressor_Previews.previews.getter : some"
-                  moduleName = "Bottled Up"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/Diss/App/Bottled%20Up/Bottled%20Up/StressorItem.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "933">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -142,9 +234,9 @@
             filePath = "../../../../../Downloads/BuildingListsAndNavigation/StartingPoint/Landmarks/Landmarks/Models/Data.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "save(this:_:)"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "writeWidgetData()"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -158,10 +250,10 @@
             filePath = "../../../../../Downloads/BuildingListsAndNavigation/StartingPoint/Landmarks/Landmarks/Models/Data.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "save(this:_:)"
-            landmarkType = "9">
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -174,10 +266,10 @@
             filePath = "../../../../../Downloads/BuildingListsAndNavigation/StartingPoint/Landmarks/Landmarks/Models/Data.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "save(this:_:)"
-            landmarkType = "9">
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -190,10 +282,10 @@
             filePath = "../../../../../Downloads/BuildingListsAndNavigation/StartingPoint/Landmarks/Landmarks/Models/Data.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "save(this:_:)"
-            landmarkType = "9">
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -206,10 +298,10 @@
             filePath = "../../../../../Downloads/BuildingListsAndNavigation/StartingPoint/Landmarks/Landmarks/Models/Data.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "save(this:_:)"
-            landmarkType = "9">
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -222,10 +314,10 @@
             filePath = "../../../../../Downloads/BuildingListsAndNavigation/StartingPoint/Landmarks/Landmarks/Models/Data.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "save(this:_:)"
-            landmarkType = "9">
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -238,133 +330,10 @@
             filePath = "../../../../../Downloads/BuildingListsAndNavigation/StartingPoint/Landmarks/Landmarks/Models/Data.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "load(_:)"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "writeWidgetData()"
             landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A1FA62DA-F56C-445B-9A47-F2E196837016"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Bottled Up/BottledStressors.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "BottledStressors"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "A1FA62DA-F56C-445B-9A47-F2E196837016 - 792f2b498ba100b3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "property wrapper backing initializer of Bottled_Up.BottledStressors.stressors : Swift.Array&lt;Bottled_Up.Stressor&gt;"
-                  moduleName = "Bottled Up"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/Diss/App/Bottled%20Up/Bottled%20Up/BottledStressors.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "24">
-               </Location>
-               <Location
-                  uuid = "A1FA62DA-F56C-445B-9A47-F2E196837016 - ce7e8726911722ee"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bottled_Up.BottledStressors.stressors.getter : Swift.Array&lt;Bottled_Up.Stressor&gt;"
-                  moduleName = "Bottled Up"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/Diss/App/Bottled%20Up/Bottled%20Up/BottledStressors.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "135">
-               </Location>
-               <Location
-                  uuid = "A1FA62DA-F56C-445B-9A47-F2E196837016 - 7ca36b364bf42fa"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bottled_Up.BottledStressors.stressors.setter : Swift.Array&lt;Bottled_Up.Stressor&gt;"
-                  moduleName = "Bottled Up"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/Diss/App/Bottled%20Up/Bottled%20Up/BottledStressors.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "150">
-               </Location>
-               <Location
-                  uuid = "A1FA62DA-F56C-445B-9A47-F2E196837016 - b16f67f800ec0aed"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bottled_Up.BottledStressors.stressors.modify : Swift.Array&lt;Bottled_Up.Stressor&gt;"
-                  moduleName = "Bottled Up"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/Diss/App/Bottled%20Up/Bottled%20Up/BottledStressors.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "42">
-               </Location>
-               <Location
-                  uuid = "A1FA62DA-F56C-445B-9A47-F2E196837016 - 3aa9848e791f45b5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bottled_Up.BottledStressors.stressors.modify : Swift.Array&lt;Bottled_Up.Stressor&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "Bottled Up"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/Diss/App/Bottled%20Up/Bottled%20Up/BottledStressors.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "10">
-               </Location>
-               <Location
-                  uuid = "A1FA62DA-F56C-445B-9A47-F2E196837016 - fb0af11b3796d281"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bottled_Up.BottledStressors.$stressors.getter : SwiftUI.Binding&lt;Swift.Array&lt;Bottled_Up.Stressor&gt;&gt;"
-                  moduleName = "Bottled Up"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/Diss/App/Bottled%20Up/Bottled%20Up/BottledStressors.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "163">
-               </Location>
-               <Location
-                  uuid = "A1FA62DA-F56C-445B-9A47-F2E196837016 - d6e8d79e0e8b5d48"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bottled_Up.BottledStressors.init() -&gt; Bottled_Up.BottledStressors"
-                  moduleName = "Bottled Up"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/Diss/App/Bottled%20Up/Bottled%20Up/BottledStressors.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "15">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

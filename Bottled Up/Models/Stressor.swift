@@ -7,9 +7,9 @@ The model for an individual stressor.
 
 import SwiftUI
 import CoreLocation
-
+/*
 class Stressor: ObservableObject, Codable, Identifiable {
-    @Published var id: UUID
+    @Published var stressorID: UUID
     @Published var name: String
     @Published var colour: String
     @Published var comments: String
@@ -20,7 +20,7 @@ class Stressor: ObservableObject, Codable, Identifiable {
     }
     
     init(name: String, colour: String, comments: String, size: Int) {
-        self.id = UUID()
+        self.stressorID = UUID()
         self.name = name
         self.colour = colour
         self.comments = comments
@@ -39,11 +39,11 @@ class Stressor: ObservableObject, Codable, Identifiable {
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
-        id = UUID()
+        stressorID = UUID()
         name = try container.decode(String.self, forKey: .name)
         colour = try container.decode(String.self, forKey: .colour)
         comments = try container.decode(String.self, forKey: .comments)
         size = try container.decode(Int.self, forKey: .size)
     }
 }
-
+*/
