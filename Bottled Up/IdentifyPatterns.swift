@@ -1,13 +1,13 @@
 //
-//  ReframeStressor.swift
+//  IdentifyPatterns.swift
 //  Bottled Up
 //
-//  Created by Liberty Curtis on 17/12/2020.
+//  Created by Liberty Curtis on 15/02/2021.
 //
 
 import SwiftUI
 
-struct ReframeStressor: View {
+struct IdentifyPatterns: View {
     @EnvironmentObject var envObj: EnvObject
     @ObservedObject var stressor: Stressor
     @ObservedObject var textFieldManager = TextFieldManager()
@@ -16,25 +16,22 @@ struct ReframeStressor: View {
     var body: some View {
         VStack {
             HStack{
-                Text("reframe")
+                Text("identify patterns:")
                     .font(.title)
                 Text(stressor.name ?? "")
                     .font(.title)
                     .foregroundColor(Color(UIColor(ciColor: CIColor(string: stressor.colour ?? "0.5 0.7 0.3 1.0"))))
             }
             
-            Text("\"\(stressor.sComments)\"")
-                .font(.subheadline)
-                .foregroundColor(Color(UIColor(ciColor: CIColor(string: stressor.colour ?? "0.5 0.7 0.3 1.0"))))
-            
-            Text("How else could you look at this?")
+            Text("Here's what you most recently wrote...")
                 .font(.subheadline)
                 .padding(.top)
             
-            TextField("I could...",
-                      text: $stressor.sReframe)
-                .frame(width: 300, height: 100, alignment: .center)
-                .multilineTextAlignment(.center)
+            Text(stressor.sComments)
+                .font(.headline)
+                .foregroundColor(Color(UIColor(ciColor: CIColor(string: stressor.colour ?? "0.5 0.7 0.3 1.0"))))
+            
+            PatternList()
         }
     }
 }

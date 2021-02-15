@@ -8,29 +8,25 @@
 import SwiftUI
 
 struct StressorItem: View {
-    @ObservedObject var stressor: Stressor
-    @Environment(\.managedObjectContext) var moc
-    @FetchRequest(entity: Stressor.entity(), sortDescriptors: [])  var stressors: FetchedResults<Stressor>
+    let name: String
+    let colour: String
+    let size: Int
+    let totalSize: Int
+    let dim: Int
     
     var body: some View {
         VStack{
-            Text(stressor.name ?? "")
+            Text(name)
                 .textCase(.lowercase)
         }
         .frame(maxWidth: .infinity,
                minHeight: self.getHeight())
-        .background(Color(UIColor(ciColor: CIColor(string: stressor.colour ?? "0.5 0.7 0.3 1.0"))))
+        .background(Color(UIColor(ciColor: CIColor(string: colour))))
         .foregroundColor(.white)
     }
     
     func getHeight() -> CGFloat {
-        let totalSizes = stressors.map({ $0.size }).reduce(0, +)
-        
-        if (totalSizes == 0){
-            return CGFloat(380)
-        }
-        
-        return CGFloat(380 * stressor.size/totalSizes)
+        return CGFloat(dim * size / totalSize)
     }
 }
 

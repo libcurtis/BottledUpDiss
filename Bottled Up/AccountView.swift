@@ -7,44 +7,49 @@
 
 import SwiftUI
 
+struct AccActions: View {
+    var body: some View {
+        VStack(alignment: .center, spacing: 20){
+        HStack {
+            Image(systemName: "person.fill").scaleEffect(2).multilineTextAlignment(.leading)
+            Text("user settings")
+                .font(.headline)
+                .fontWeight(.thin)
+                .padding()
+        }
+        
+        HStack {
+            Image(systemName: "lock.fill").scaleEffect(2).multilineTextAlignment(.leading)
+            Text("adjust passcode")
+                .font(.headline)
+                .fontWeight(.thin)
+                .padding()
+        }
+        
+        
+        HStack {
+            Image(systemName: "moon.fill").scaleEffect(2).multilineTextAlignment(.leading)
+            Text("switch mode")
+                .font(.headline)
+                .fontWeight(.thin)
+                .padding()
+        }
+        }
+        .offset(x:0, y:80)
+    }
+}
+
 struct AccountView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 20){
-            Text("bottled up")
-                .font(.title)
-                .fontWeight(.thin)
-                .padding(100)
-            
-            VStack(spacing:30){
-                HStack {
-                    Image(systemName: "person.fill").scaleEffect(2).multilineTextAlignment(.leading)
-                    Text("user settings")
-                        .font(.headline)
-                        .fontWeight(.thin)
-                        .padding()
-                }
-                
-                HStack {
-                    Image(systemName: "lock.fill").scaleEffect(2).multilineTextAlignment(.leading)
-                    Text("adjust passcode")
-                        .font(.headline)
-                        .fontWeight(.thin)
-                        .padding()
-                }
-                
-                
-                HStack {
-                    Image(systemName: "moon.fill").scaleEffect(2).multilineTextAlignment(.leading)
-                    Text("switch mode")
-                        .font(.headline)
-                        .fontWeight(.thin)
-                        .padding()
-                }
+            AppTitle()
+            AccActions()
+            HStack{
+                BottleView().scaleEffect(0.5)
+                    .offset(x:0, y:40)
             }
-            
-            Spacer()
-            
         }
+        .offset(x:0,y: 40)
     }
 }
 

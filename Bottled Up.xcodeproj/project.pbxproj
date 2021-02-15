@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		723EF5D025DAF1E30054F02A /* IdentifyPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723EF5CF25DAF1E30054F02A /* IdentifyPatterns.swift */; };
 		7241F3F02580153400BBD21E /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7241F3EE2580153400BBD21E /* DataModel.xcdatamodeld */; };
-		724AC071253B76DC007880FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC070253B76DC007880FF /* AppDelegate.swift */; };
-		724AC073253B76DC007880FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC072253B76DC007880FF /* SceneDelegate.swift */; };
-		724AC075253B76DC007880FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC074253B76DC007880FF /* ContentView.swift */; };
+		724AC075253B76DC007880FF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC074253B76DC007880FF /* MainView.swift */; };
 		724AC07A253B76DE007880FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724AC079253B76DE007880FF /* Preview Assets.xcassets */; };
 		724AC07D253B76DE007880FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724AC07B253B76DE007880FF /* LaunchScreen.storyboard */; };
 		724AC088253B76DE007880FF /* Bottled_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC087253B76DE007880FF /* Bottled_UpTests.swift */; };
@@ -27,12 +26,23 @@
 		72A45D2A25701F8B00FD1D0D /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A45D2925701F8B00FD1D0D /* AccountView.swift */; };
 		72A85200258BB0F9005F01D2 /* Stressor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A851FE258BB0F9005F01D2 /* Stressor+CoreDataClass.swift */; };
 		72A85201258BB0F9005F01D2 /* Stressor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A851FF258BB0F9005F01D2 /* Stressor+CoreDataProperties.swift */; };
+		72A88CD125A485C500DED9F9 /* BottledUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A88CD025A485C500DED9F9 /* BottledUpApp.swift */; };
+		72A88CD725A485F100DED9F9 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A88CD625A485F100DED9F9 /* PersistenceController.swift */; };
+		72A88CE525A4887E00DED9F9 /* BottleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A88CE425A4887E00DED9F9 /* BottleView.swift */; };
+		72A88CEB25A4889200DED9F9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A88CEA25A4889200DED9F9 /* HeaderView.swift */; };
+		72A88CF125A488A400DED9F9 /* DropletButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A88CF025A488A400DED9F9 /* DropletButton.swift */; };
+		72A88CF725A488B600DED9F9 /* AppTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A88CF625A488B600DED9F9 /* AppTitle.swift */; };
+		72A88D0D25A4891700DED9F9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A88D0C25A4891700DED9F9 /* Config.swift */; };
+		72A88D1725A48AC600DED9F9 /* WidgetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A88D1625A48AC600DED9F9 /* WidgetItem.swift */; };
+		72A88D1C25A48ACD00DED9F9 /* WidgetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A88D1625A48AC600DED9F9 /* WidgetItem.swift */; };
+		72A88D2125A48AEE00DED9F9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A88D0C25A4891700DED9F9 /* Config.swift */; };
 		72B9D3CE253B814900B8ECE1 /* BottleImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3CD253B814900B8ECE1 /* BottleImg.swift */; };
 		72B9D3DF253B87E700B8ECE1 /* StressorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3DE253B87E700B8ECE1 /* StressorItem.swift */; };
 		72B9D3F0253B898800B8ECE1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3EF253B898800B8ECE1 /* Data.swift */; };
 		72B9D3FA253B955100B8ECE1 /* Stressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3F9253B955100B8ECE1 /* Stressor.swift */; };
 		72B9D407253BA10500B8ECE1 /* stressorData.json in Resources */ = {isa = PBXBuildFile; fileRef = 72B9D3DA253B879200B8ECE1 /* stressorData.json */; };
 		72B9D40C253BAD6100B8ECE1 /* BottledStressors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D40B253BAD6100B8ECE1 /* BottledStressors.swift */; };
+		72CA7CB625DB1EBE0054AD7F /* PatternList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA7CB525DB1EBE0054AD7F /* PatternList.swift */; };
 		72D91C1A2569458A008CACAF /* DetailStressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D91C192569458A008CACAF /* DetailStressor.swift */; };
 		72DB2335258BBA0200752C04 /* ReframeStressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB2334258BBA0200752C04 /* ReframeStressor.swift */; };
 		72DB2340258BC2E900752C04 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DB233F258BC2E900752C04 /* WidgetKit.framework */; };
@@ -41,18 +51,10 @@
 		72DB234A258BC2EA00752C04 /* BottledUpWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 72DB2346258BC2E900752C04 /* BottledUpWidget.intentdefinition */; };
 		72DB234B258BC2EA00752C04 /* BottledUpWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 72DB2346258BC2E900752C04 /* BottledUpWidget.intentdefinition */; };
 		72DB234E258BC2EA00752C04 /* BottledUpWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 72DB233D258BC2E900752C04 /* BottledUpWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		72DB2367258BC5CD00752C04 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB2366258BC5CD00752C04 /* WidgetView.swift */; };
 		72DB236C258BC5CF00752C04 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB2366258BC5CD00752C04 /* WidgetView.swift */; };
-		72DB237A258BC6DA00752C04 /* BottledStressors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D40B253BAD6100B8ECE1 /* BottledStressors.swift */; };
 		72DB237F258BC6DF00752C04 /* StressorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3DE253B87E700B8ECE1 /* StressorItem.swift */; };
 		72DB2384258BC6E400752C04 /* BottleImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D3CD253B814900B8ECE1 /* BottleImg.swift */; };
-		72DB238F258BC6FF00752C04 /* DetailStressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D91C192569458A008CACAF /* DetailStressor.swift */; };
 		72DB2399258BC71400752C04 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A45D2425701B3900FD1D0D /* HelpView.swift */; };
-		72DB239E258BC71900752C04 /* AddingStressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72926AD7254A310C00CA972A /* AddingStressor.swift */; };
-		72DB23A3258BC71D00752C04 /* ReframeStressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB2334258BBA0200752C04 /* ReframeStressor.swift */; };
-		72DB23A4258BC71F00752C04 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A45D2925701F8B00FD1D0D /* AccountView.swift */; };
-		72DB23A9258BC72300752C04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AC074253B76DC007880FF /* ContentView.swift */; };
-		72DB23CE258BC7E100752C04 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A45D162570080E00FD1D0D /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,11 +96,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		723EF5CF25DAF1E30054F02A /* IdentifyPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyPatterns.swift; sourceTree = "<group>"; };
 		7241F3EF2580153400BBD21E /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		724AC06D253B76DC007880FF /* Bottled Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bottled Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		724AC070253B76DC007880FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		724AC072253B76DC007880FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		724AC074253B76DC007880FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		724AC074253B76DC007880FF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		724AC076253B76DE007880FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		724AC079253B76DE007880FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		724AC07C253B76DE007880FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,12 +118,21 @@
 		72A45D2925701F8B00FD1D0D /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		72A851FE258BB0F9005F01D2 /* Stressor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stressor+CoreDataClass.swift"; sourceTree = "<group>"; };
 		72A851FF258BB0F9005F01D2 /* Stressor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stressor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		72A88CD025A485C500DED9F9 /* BottledUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottledUpApp.swift; sourceTree = "<group>"; };
+		72A88CD625A485F100DED9F9 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		72A88CE425A4887E00DED9F9 /* BottleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleView.swift; sourceTree = "<group>"; };
+		72A88CEA25A4889200DED9F9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		72A88CF025A488A400DED9F9 /* DropletButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropletButton.swift; sourceTree = "<group>"; };
+		72A88CF625A488B600DED9F9 /* AppTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitle.swift; sourceTree = "<group>"; };
+		72A88D0C25A4891700DED9F9 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		72A88D1625A48AC600DED9F9 /* WidgetItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetItem.swift; sourceTree = "<group>"; };
 		72B9D3CD253B814900B8ECE1 /* BottleImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleImg.swift; sourceTree = "<group>"; };
 		72B9D3DA253B879200B8ECE1 /* stressorData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stressorData.json; sourceTree = "<group>"; };
 		72B9D3DE253B87E700B8ECE1 /* StressorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressorItem.swift; sourceTree = "<group>"; };
 		72B9D3EF253B898800B8ECE1 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = ../../../../../../../Downloads/BuildingListsAndNavigation/StartingPoint/Landmarks/Landmarks/Models/Data.swift; sourceTree = "<group>"; };
 		72B9D3F9253B955100B8ECE1 /* Stressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stressor.swift; sourceTree = "<group>"; };
 		72B9D40B253BAD6100B8ECE1 /* BottledStressors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottledStressors.swift; sourceTree = "<group>"; };
+		72CA7CB525DB1EBE0054AD7F /* PatternList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternList.swift; sourceTree = "<group>"; };
 		72D91C192569458A008CACAF /* DetailStressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStressor.swift; sourceTree = "<group>"; };
 		72DB2334258BBA0200752C04 /* ReframeStressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReframeStressor.swift; sourceTree = "<group>"; };
 		72DB233D258BC2E900752C04 /* BottledUpWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BottledUpWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +182,8 @@
 		724AC064253B76DC007880FF = {
 			isa = PBXGroup;
 			children = (
+				72A88D0C25A4891700DED9F9 /* Config.swift */,
+				72A88CE425A4887E00DED9F9 /* BottleView.swift */,
 				7270ABEF258BCF5600262E0F /* BottledUpWidgetExtension.entitlements */,
 				724AC06F253B76DC007880FF /* Bottled Up */,
 				724AC086253B76DE007880FF /* Bottled UpTests */,
@@ -201,17 +213,21 @@
 				72A851FF258BB0F9005F01D2 /* Stressor+CoreDataProperties.swift */,
 				72B9D3E3253B883900B8ECE1 /* Models */,
 				72B9D3D4253B876E00B8ECE1 /* Resources */,
-				724AC070253B76DC007880FF /* AppDelegate.swift */,
-				724AC072253B76DC007880FF /* SceneDelegate.swift */,
 				72A45D2425701B3900FD1D0D /* HelpView.swift */,
-				72DB2366258BC5CD00752C04 /* WidgetView.swift */,
 				72B9D3CD253B814900B8ECE1 /* BottleImg.swift */,
 				72926AD7254A310C00CA972A /* AddingStressor.swift */,
 				72D91C192569458A008CACAF /* DetailStressor.swift */,
 				72DB2334258BBA0200752C04 /* ReframeStressor.swift */,
+				723EF5CF25DAF1E30054F02A /* IdentifyPatterns.swift */,
+				72CA7CB525DB1EBE0054AD7F /* PatternList.swift */,
 				72A45D2925701F8B00FD1D0D /* AccountView.swift */,
 				72A45D162570080E00FD1D0D /* HomeView.swift */,
-				724AC074253B76DC007880FF /* ContentView.swift */,
+				72A88CF625A488B600DED9F9 /* AppTitle.swift */,
+				72A88CF025A488A400DED9F9 /* DropletButton.swift */,
+				72A88CEA25A4889200DED9F9 /* HeaderView.swift */,
+				724AC074253B76DC007880FF /* MainView.swift */,
+				72A88CD025A485C500DED9F9 /* BottledUpApp.swift */,
+				72A88CD625A485F100DED9F9 /* PersistenceController.swift */,
 				72B9D40B253BAD6100B8ECE1 /* BottledStressors.swift */,
 				72B9D3DE253B87E700B8ECE1 /* StressorItem.swift */,
 				724AC076253B76DE007880FF /* Assets.xcassets */,
@@ -279,6 +295,8 @@
 			isa = PBXGroup;
 			children = (
 				72DB2344258BC2E900752C04 /* BottledUpWidget.swift */,
+				72DB2366258BC5CD00752C04 /* WidgetView.swift */,
+				72A88D1625A48AC600DED9F9 /* WidgetItem.swift */,
 				72DB2346258BC2E900752C04 /* BottledUpWidget.intentdefinition */,
 				72DB2347258BC2EA00752C04 /* Assets.xcassets */,
 				72DB2349258BC2EA00752C04 /* Info.plist */,
@@ -448,25 +466,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A88CE525A4887E00DED9F9 /* BottleView.swift in Sources */,
 				72B9D3F0253B898800B8ECE1 /* Data.swift in Sources */,
 				72A45D2525701B3900FD1D0D /* HelpView.swift in Sources */,
 				72DB234B258BC2EA00752C04 /* BottledUpWidget.intentdefinition in Sources */,
 				72DB2335258BBA0200752C04 /* ReframeStressor.swift in Sources */,
+				72A88D0D25A4891700DED9F9 /* Config.swift in Sources */,
 				72B9D3DF253B87E700B8ECE1 /* StressorItem.swift in Sources */,
 				7241F3F02580153400BBD21E /* DataModel.xcdatamodeld in Sources */,
 				72A85201258BB0F9005F01D2 /* Stressor+CoreDataProperties.swift in Sources */,
-				724AC071253B76DC007880FF /* AppDelegate.swift in Sources */,
 				72A85200258BB0F9005F01D2 /* Stressor+CoreDataClass.swift in Sources */,
 				72B9D3CE253B814900B8ECE1 /* BottleImg.swift in Sources */,
-				724AC073253B76DC007880FF /* SceneDelegate.swift in Sources */,
-				724AC075253B76DC007880FF /* ContentView.swift in Sources */,
+				724AC075253B76DC007880FF /* MainView.swift in Sources */,
+				723EF5D025DAF1E30054F02A /* IdentifyPatterns.swift in Sources */,
 				72B9D3FA253B955100B8ECE1 /* Stressor.swift in Sources */,
 				72D91C1A2569458A008CACAF /* DetailStressor.swift in Sources */,
+				72A88D1725A48AC600DED9F9 /* WidgetItem.swift in Sources */,
+				72CA7CB625DB1EBE0054AD7F /* PatternList.swift in Sources */,
+				72A88CEB25A4889200DED9F9 /* HeaderView.swift in Sources */,
+				72A88CF125A488A400DED9F9 /* DropletButton.swift in Sources */,
 				72A45D172570080E00FD1D0D /* HomeView.swift in Sources */,
+				72A88CD725A485F100DED9F9 /* PersistenceController.swift in Sources */,
+				72A88CF725A488B600DED9F9 /* AppTitle.swift in Sources */,
 				72926AD8254A310C00CA972A /* AddingStressor.swift in Sources */,
 				72A45D2A25701F8B00FD1D0D /* AccountView.swift in Sources */,
+				72A88CD125A485C500DED9F9 /* BottledUpApp.swift in Sources */,
 				72B9D40C253BAD6100B8ECE1 /* BottledStressors.swift in Sources */,
-				72DB2367258BC5CD00752C04 /* WidgetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,18 +517,13 @@
 			files = (
 				7270ABC1258BC9CC00262E0F /* Stressor+CoreDataClass.swift in Sources */,
 				72DB2399258BC71400752C04 /* HelpView.swift in Sources */,
-				72DB23A9258BC72300752C04 /* ContentView.swift in Sources */,
 				72DB236C258BC5CF00752C04 /* WidgetView.swift in Sources */,
+				72A88D2125A48AEE00DED9F9 /* Config.swift in Sources */,
 				7270ABE5258BCAFC00262E0F /* DataModel.xcdatamodeld in Sources */,
 				72DB2384258BC6E400752C04 /* BottleImg.swift in Sources */,
 				72DB237F258BC6DF00752C04 /* StressorItem.swift in Sources */,
-				72DB237A258BC6DA00752C04 /* BottledStressors.swift in Sources */,
+				72A88D1C25A48ACD00DED9F9 /* WidgetItem.swift in Sources */,
 				7270ABBC258BC9C300262E0F /* Stressor+CoreDataProperties.swift in Sources */,
-				72DB23CE258BC7E100752C04 /* HomeView.swift in Sources */,
-				72DB23A4258BC71F00752C04 /* AccountView.swift in Sources */,
-				72DB23A3258BC71D00752C04 /* ReframeStressor.swift in Sources */,
-				72DB238F258BC6FF00752C04 /* DetailStressor.swift in Sources */,
-				72DB239E258BC71900752C04 /* AddingStressor.swift in Sources */,
 				72DB234A258BC2EA00752C04 /* BottledUpWidget.intentdefinition in Sources */,
 				7270ABB7258BC9B600262E0F /* Stressor.swift in Sources */,
 				72DB2345258BC2E900752C04 /* BottledUpWidget.swift in Sources */,

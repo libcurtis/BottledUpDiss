@@ -18,6 +18,7 @@ extension Stressor {
 
     @NSManaged public var colour: String?
     @NSManaged public var reframe: String?
+    @NSManaged public var identify: String?
     @NSManaged public var comments: String?
     @NSManaged public var name: String?
     @NSManaged public var size: Int16
@@ -38,6 +39,15 @@ extension Stressor {
         }
         set {
             self.reframe = newValue
+        }
+    }
+    
+    public var sIdentify: String {
+        get{
+            return identify ?? ""
+        }
+        set {
+            self.identify = newValue
         }
     }
 }

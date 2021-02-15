@@ -156,7 +156,7 @@ struct AddingStressor: View {
                     stressor.comments = comments
                     stressor.size = size
                     
-                    try? self.moc.save()
+                    PersistenceController.shared.save()
                     
                     self.presentationMode.wrappedValue.dismiss()
                 }.padding()

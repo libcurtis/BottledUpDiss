@@ -23,7 +23,7 @@ struct MainView: View {
             HelpView().tabItem {
                 Image(systemName: "questionmark.circle.fill")
                 Text("Help") }.tag(3)
-        }
+        }.accentColor(.purple)
     }
 }
 

@@ -9,42 +9,37 @@ import WidgetKit
 import SwiftUI
 import Intents
 
-struct Provider: IntentTimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent())
+struct ItemsEntry: TimelineEntry {
+    let date: Date
+    let items: [WidgetItem]
+}
+
+struct Provider: TimelineProvider {
+    func placeholder(in context: Context) -> ItemsEntry {
+        ItemsEntry(date: Date(), items: [WidgetItem]())
     }
 
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration)
+    func getSnapshot(in context: Context, completion: @escaping
+(ItemsEntry) -> ()) {
+        let _ = "getting snapshot..."
+        let entry = ItemsEntry(date: Date(), items: loadItems())
         completion(entry)
     }
 
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
-            entries.append(entry)
-        }
-
-        let timeline = Timeline(entries: entries, policy: .atEnd)
+    func getTimeline(in context: Context, completion: @escaping
+(Timeline<Entry>) -> ()) {
+        let _ = print("GETTING TIMELINE!")
+        let entry = ItemsEntry(date: Date(), items: loadItems())
+        let timeline = Timeline(entries: [entry], policy: .never)
         completion(timeline)
     }
-}
 
-struct SimpleEntry: TimelineEntry {
-    let date: Date
-    let configuration: ConfigurationIntent
-}
+    func loadItems() -> [WidgetItem] {
+        guard let url = Config.widgetFilename else { return [] }
+        guard let data = try? Data(contentsOf: url) else { return [] }
 
-struct BottledUpWidgetEntryView : View {
-    var entry: Provider.Entry
-
-    var body: some View {
-        WidgetView()
+        let _ = "loading items..."
+        return (try? JSONDecoder().decode([WidgetItem].self, from: data)) ?? []
     }
 }
 
@@ -53,8 +48,8 @@ struct BottledUpWidget: Widget {
     let kind: String = "BottledUpWidget"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
-            BottledUpWidgetEntryView(entry: entry)
+        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+            WidgetView(entry: entry)
         }
         .configurationDisplayName("Bottled Up")
         .description("Your current stressors.")
@@ -63,7 +58,7 @@ struct BottledUpWidget: Widget {
 
 struct BottledUpWidget_Previews: PreviewProvider {
     static var previews: some View {
-        BottledUpWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        WidgetView(entry: ItemsEntry(date: Date(), items: []))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

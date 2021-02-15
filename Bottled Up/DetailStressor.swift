@@ -22,10 +22,12 @@ struct DetailStressor: View {
                     .foregroundColor(Color(UIColor(ciColor: CIColor(string: stressor.colour ?? "0.5 0.7 0.3 1.0"))))
                 
                 HStack {
-                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(.blue)
-                        .frame(maxWidth: .infinity, maxHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                        .overlay(Text("Identify").font(.headline).foregroundColor(.white))
+                    NavigationLink(destination: IdentifyPatterns(stressor: stressor)) {
+                        RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(.blue)
+                            .frame(maxWidth: .infinity, maxHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                            .overlay(Text("Identify").font(.headline).foregroundColor(.white))
+                    }
                     
                     NavigationLink(destination: ReframeStressor(stressor: stressor)) {
                         RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
@@ -40,7 +42,7 @@ struct DetailStressor: View {
                         .overlay(Text("Remove").font(.headline).foregroundColor(.white))
                         .onTapGesture {
                             moc.delete(stressor)
-                            try? self.moc.save()
+                            PersistenceController.shared.save()
                         }
                 }
                 
@@ -139,7 +141,7 @@ struct DetailStressor: View {
         updated.colour = self.stressor.colour
         updated.size = size
         
-        try? self.moc.save()
+        PersistenceController.shared.save()
     }
     
     func setColour(colour: String) {
@@ -150,18 +152,18 @@ struct DetailStressor: View {
         updated.colour = colour
         updated.size = self.stressor.size
         
-        try? self.moc.save()
+        PersistenceController.shared.save()
     }
     
     func setComment(comment: String) {
-        let updated = self.stressor
-        updated.stressorID = self.stressor.stressorID
-        updated.name = self.stressor.name
+        let updated = stressor
+        updated.stressorID = stressor.stressorID
+        updated.name = stressor.name
         updated.comments = comment
-        updated.colour = self.stressor.colour
-        updated.size = self.stressor.size
+        updated.colour = stressor.colour
+        updated.size = stressor.size
         
-        try? self.moc.save()
+        PersistenceController.shared.save()
     }
 }
 
