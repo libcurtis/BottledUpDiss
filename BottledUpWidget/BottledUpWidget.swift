@@ -21,14 +21,12 @@ struct Provider: TimelineProvider {
 
     func getSnapshot(in context: Context, completion: @escaping
 (ItemsEntry) -> ()) {
-        let _ = "getting snapshot..."
         let entry = ItemsEntry(date: Date(), items: loadItems())
         completion(entry)
     }
 
     func getTimeline(in context: Context, completion: @escaping
 (Timeline<Entry>) -> ()) {
-        let _ = print("GETTING TIMELINE!")
         let entry = ItemsEntry(date: Date(), items: loadItems())
         let timeline = Timeline(entries: [entry], policy: .never)
         completion(timeline)
@@ -38,7 +36,6 @@ struct Provider: TimelineProvider {
         guard let url = Config.widgetFilename else { return [] }
         guard let data = try? Data(contentsOf: url) else { return [] }
 
-        let _ = "loading items..."
         return (try? JSONDecoder().decode([WidgetItem].self, from: data)) ?? []
     }
 }

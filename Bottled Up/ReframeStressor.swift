@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ReframeStressor: View {
-    @EnvironmentObject var envObj: EnvObject
+    @EnvironmentObject var envObj: BottleViewState
     @ObservedObject var stressor: Stressor
-    @ObservedObject var textFieldManager = TextFieldManager()
+    @State private var reframed: String = ""
     @Environment(\.managedObjectContext) var moc
     
     var body: some View {
@@ -32,9 +32,27 @@ struct ReframeStressor: View {
                 .padding(.top)
             
             TextField("I could...",
-                      text: $stressor.sReframe)
+                      text: $reframed)
                 .frame(width: 300, height: 100, alignment: .center)
                 .multilineTextAlignment(.center)
+            
+            
+            HStack{
+                Button("Save") {
+                    func save(comment: String) {
+                        let updated = stressor
+                        updated.stressorID = stressor.stressorID
+                        updated.name = stressor.name
+                        updated.comments = stressor.comments
+                        updated.colour = stressor.colour
+                        updated.size = stressor.size
+                        updated.reframe = reframed
+                        
+                        PersistenceController.shared.save()
+                    }
+                }.padding()
+            }
         }
     }
+    
 }

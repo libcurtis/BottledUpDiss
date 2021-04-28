@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DropletButton: View {
-    @EnvironmentObject var envObj: EnvObject
+    @EnvironmentObject var envObj: BottleViewState
     
     var body: some View {
         Image(systemName: "drop.fill")

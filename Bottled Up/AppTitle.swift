@@ -12,7 +12,6 @@ struct AppTitle: View {
         Text("bottled up")
             .font(.title)
             .fontWeight(.thin)
-            .offset(x:0, y:40)
     }
 }
 

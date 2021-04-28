@@ -10,7 +10,7 @@ import SwiftUI
 struct HeaderView: View {
     var body: some View {
         VStack {
-            AppTitle()
+            AppTitle().offset(x:0,y:40)
             DropletButton()
         }
         .background(Color(UIColor.systemBackground))

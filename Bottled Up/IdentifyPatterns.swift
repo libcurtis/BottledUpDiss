@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct IdentifyPatterns: View {
-    @EnvironmentObject var envObj: EnvObject
+    @EnvironmentObject var envObj: BottleViewState
     @ObservedObject var stressor: Stressor
     @ObservedObject var textFieldManager = TextFieldManager()
     @Environment(\.managedObjectContext) var moc

@@ -55,7 +55,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AA590AF0-040D-43A6-9786-00265B0F86EF"
+            uuid = "6E4F34EE-9BD6-4093-8C68-EE35A99B7F43"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -64,54 +64,6 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
             endingLineNumber = "37"
-            landmarkName = "previews"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "AA590AF0-040D-43A6-9786-00265B0F86EF - 197c744857500041"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static Bottled_Up.Stressor_Previews.previews.getter : some"
-                  moduleName = "Bottled Up"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/DISS/App/Bottled%20Up/Bottled%20Up/StressorItem.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "464">
-               </Location>
-               <Location
-                  uuid = "AA590AF0-040D-43A6-9786-00265B0F86EF - df2b869d44791500"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.EmptyView in static Bottled_Up.Stressor_Previews.previews.getter : some"
-                  moduleName = "Bottled Up"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/libertycurtis/Desktop/FINAL%20YEAR/DISS/App/Bottled%20Up/Bottled%20Up/StressorItem.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6E4F34EE-9BD6-4093-8C68-EE35A99B7F43"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Bottled Up/StressorItem.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
             landmarkName = "previews"
             landmarkType = "24">
          </BreakpointContent>
@@ -226,6 +178,22 @@
             endingLineNumber = "26"
             landmarkName = "unknown"
             landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2CC0E56A-B11A-4301-9C64-A89800FF0404"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bottled Up/StressorItem.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getHeight()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

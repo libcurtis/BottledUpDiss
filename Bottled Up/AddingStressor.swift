@@ -96,6 +96,8 @@ struct AddingStressor: View {
                     
                 }.frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
+                
+                
                 TextField("Any more details?", text: $comments)
                         .frame(width: 300, height: 50, alignment: .center)
                         .multilineTextAlignment(.center)

@@ -9,7 +9,7 @@ import SwiftUI
 import CoreData
 
 struct DetailStressor: View {
-    @EnvironmentObject var envObj: EnvObject
+    @EnvironmentObject var envObj: BottleViewState
     @ObservedObject var stressor: Stressor
     @ObservedObject var textFieldManager = TextFieldManager()
     @Environment(\.managedObjectContext) var moc
@@ -25,26 +25,34 @@ struct DetailStressor: View {
                     NavigationLink(destination: IdentifyPatterns(stressor: stressor)) {
                         RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                             .foregroundColor(.blue)
-                            .frame(maxWidth: .infinity, maxHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                            .frame(maxHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
                             .overlay(Text("Identify").font(.headline).foregroundColor(.white))
                     }
                     
                     NavigationLink(destination: ReframeStressor(stressor: stressor)) {
                         RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                             .foregroundColor(.green)
-                            .frame(maxWidth: .infinity, maxHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                            .frame(maxHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                            .overlay(Text("Reframe").font(.headline).foregroundColor(.white))
+                    }
+                    
+                    
+                    NavigationLink(destination: WordBank()) {
+                        RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(.green)
+                            .frame(maxHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
                             .overlay(Text("Reframe").font(.headline).foregroundColor(.white))
                     }
                     
                     RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.yellow)
-                        .frame(maxWidth: .infinity, maxHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                        .frame(maxHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
                         .overlay(Text("Remove").font(.headline).foregroundColor(.white))
                         .onTapGesture {
                             moc.delete(stressor)
                             PersistenceController.shared.save()
                         }
-                }
+                }.frame(width:350)
                 
                 if (stressor.sComments.count > 0){
                     TextField(stressor.sComments, text: $stressor.sComments)

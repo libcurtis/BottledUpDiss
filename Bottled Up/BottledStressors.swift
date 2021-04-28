@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class EnvObject: ObservableObject {
+class BottleViewState: ObservableObject {
     @Published var addingStressor: Bool
     
     init() {

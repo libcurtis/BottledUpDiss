@@ -15,15 +15,35 @@ struct HelpView: View {
                 .fontWeight(.thin)
                 .padding()
             
-            Text("welcome!").font(.headline).fontWeight(.thin)
-                .padding()
-            
-            Text("fill up your personal jar with whatever is stressing you out by clicking on the water droplet on the home screen.").font(.headline).fontWeight(.thin).multilineTextAlignment(.center).padding()
-            
-            Text("work on  these stressors by clicking on them in the jar. try to identify any thought patterns you may be experiencing.").font(.headline).fontWeight(.thin).multilineTextAlignment(.center).padding()
-            
-            
-            Text("if you are worried you or someone else may be at risk, visit the NHS website for information on how to get help.").font(.headline).fontWeight(.thin).multilineTextAlignment(.center).padding()
+            VStack (spacing:20){
+                NavigationLink(destination: TutorialView()) {
+                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.pink)
+                        .frame(maxHeight: 100)
+                        .overlay(Text("about").font(.headline).foregroundColor(.white))
+                }
+                
+                NavigationLink(destination: Text("")) {
+                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.purple)
+                        .frame(maxHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                        .overlay(Text("NHS link").font(.headline).foregroundColor(.white))
+                }
+                
+                NavigationLink(destination: FAQView()) {
+                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.pink)
+                        .frame(maxHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                        .overlay(Text("faqs").font(.headline).foregroundColor(.white))
+                }
+                
+                NavigationLink(destination: ContactView()) {
+                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.purple)
+                        .frame(maxHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                        .overlay(Text("contact").font(.headline).foregroundColor(.white))
+                }
+            }.frame(width:350)
         }
     }
 }

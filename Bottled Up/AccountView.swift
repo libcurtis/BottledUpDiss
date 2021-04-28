@@ -9,47 +9,63 @@ import SwiftUI
 
 struct AccActions: View {
     var body: some View {
-        VStack(alignment: .center, spacing: 20){
-        HStack {
-            Image(systemName: "person.fill").scaleEffect(2).multilineTextAlignment(.leading)
-            Text("user settings")
-                .font(.headline)
-                .fontWeight(.thin)
-                .padding()
-        }
+        VStack(alignment: .leading, spacing: 10){
+            HStack {
+                Image(systemName: "person.fill").scaleEffect(1.5).multilineTextAlignment(.leading)
+                Text("user settings")
+                    .font(.title)
+                    .fontWeight(.thin)
+                    .padding()
+                    .foregroundColor(.purple)
+            }
         
-        HStack {
-            Image(systemName: "lock.fill").scaleEffect(2).multilineTextAlignment(.leading)
-            Text("adjust passcode")
-                .font(.headline)
-                .fontWeight(.thin)
-                .padding()
-        }
+            HStack {
+                Image(systemName: "lock.fill").scaleEffect(1.5).multilineTextAlignment(.leading)
+                Text("adjust passcode")
+                    .font(.title)
+                    .fontWeight(.thin)
+                    .padding()
+                    .foregroundColor(.purple)
+            }
         
-        
-        HStack {
-            Image(systemName: "moon.fill").scaleEffect(2).multilineTextAlignment(.leading)
-            Text("switch mode")
-                .font(.headline)
-                .fontWeight(.thin)
-                .padding()
+            HStack {
+                Image(systemName: "moon.fill").scaleEffect(1.5).multilineTextAlignment(.leading)
+                Text("switch mode")
+                    .font(.title)
+                    .fontWeight(.thin)
+                    .padding()
+                    .foregroundColor(.purple)
+            }
+            
+            HStack {
+                Image(systemName: "rosette").scaleEffect(1.5).multilineTextAlignment(.leading)
+                NavigationLink(
+                    destination: ProgressView()
+                   ){
+                    Text("achievements")
+                        .font(.title)
+                        .fontWeight(.thin)
+                        .padding()
+                        .foregroundColor(.purple)
+                }
+            }
         }
-        }
-        .offset(x:0, y:80)
     }
 }
 
 struct AccountView: View {
     var body: some View {
-        VStack(alignment: .center, spacing: 20){
-            AppTitle()
-            AccActions()
-            HStack{
-                BottleView().scaleEffect(0.5)
-                    .offset(x:0, y:40)
+    NavigationView{
+            VStack(spacing: 100){
+                AccActions()
+                VStack{
+                    BottleView(
+                        height: 180,
+                        width: 130
+                    )
+                }.frame(height:200).offset(y:-50)
             }
         }
-        .offset(x:0,y: 40)
     }
 }
 

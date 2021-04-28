@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct BottledUpApp: App {
-    @StateObject var envObj = EnvObject()
+    @StateObject var envObj = BottleViewState()
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
